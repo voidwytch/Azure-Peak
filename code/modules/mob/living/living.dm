@@ -1909,6 +1909,9 @@
 
 	if(!(mobility_flags & MOBILITY_STAND))
 		return
+	
+	if(HAS_TRAIT(src, TRAIT_NOFIREDECAY)) // no infinite fire spread please
+		return
 
 	if(HAS_TRAIT(spread_to, TRAIT_NOFIRE) || HAS_TRAIT(src, TRAIT_NOFIRE))
 		return

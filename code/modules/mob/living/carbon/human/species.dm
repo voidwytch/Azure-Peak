@@ -2233,14 +2233,17 @@ GLOBAL_LIST_EMPTY(roundstart_races_paths)
 	if(!Canignite_mob(H))
 		return TRUE
 
+	var/fire_resist_mult = 1
+	if(HAS_TRAIT(H, TRAIT_FIRE_IMMUNE))
+		fire_resist_mult = 0
+	if(HAS_TRAIT(H, TRAIT_FIRE_RESIST))
+		fire_resist_mult = 0.5
+
 	var/thermal_protection = H.get_thermal_protection()
 
 	if(thermal_protection >= FIRE_IMMUNITY_MAX_TEMP_PROTECT && !no_protection)
 		return
 
-	var/fire_resist_mult = HAS_TRAIT(H, TRAIT_FIRE_RESIST) ? 0.5 : 1
-
-	var/burn_damage
 	if(thermal_protection >= FIRE_SUIT_MAX_TEMP_PROTECT && !no_protection)
 		burn_damage = FIRE_WOUND_BURN_SUITED
 	else

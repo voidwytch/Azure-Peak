@@ -499,3 +499,13 @@
 #undef OOZE_UPG_WHPRATE
 #undef OOZE_UPG_PAINRATE
 #undef OOZE_UPG_SELFHEAL 
+
+/datum/wound/lampcautery
+	name = "cauterized wound"
+	whp = 240	
+	bleed_rate = 0
+	clotting_rate = 0
+	clotting_threshold = 0
+	passive_healing = 1
+	woundpain = 100	
+	healable_by_miracles = FALSE

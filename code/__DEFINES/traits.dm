@@ -861,7 +861,9 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_PIERCEIMMUNE		"Pierce Immunity"
 #define TRAIT_NODISMEMBER		"Dismember Immunity"
 #define TRAIT_NOFIRE			"nonflammable" // Full fire immunity - reserve for monsters/NPCs only, do not grant to players
+#define TRAIT_FIRE_IMMUNE		"fire_immune" // Full fire immunity, but you can still gain fire stacks.
 #define TRAIT_FIRE_RESIST		"fire_resistance" // 50% fire damage/heating reduction + 2x stack decay - use this for player-accessible fire resistance
+#define TRAIT_NOFIREDECAY		"no_fire_decay"
 #define TRAIT_NOGUNS			"no_guns"
 #define TRAIT_NOMETABOLISM		"no_metabolism"
 #define TRAIT_LIMBATTACHMENT	"limb_attach"

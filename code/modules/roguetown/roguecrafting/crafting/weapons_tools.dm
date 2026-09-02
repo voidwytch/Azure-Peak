@@ -456,6 +456,16 @@
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 5
 
+/datum/crafting_recipe/roguetown/survival/lampstaff
+	name = "quarterstaff"
+	display_category = ITEM_CAT_WEAPONS_POLEARMS
+	category = "Tools"
+	result = list(/obj/item/rogueweapon/woodstaff/quarterstaff)
+	reqs = list(/obj/item/grown/log/tree = 1)
+	skillcraft = /datum/skill/craft/carpentry
+	skillcraft = /datum/skill/craft/carpentry
+	craftdiff = 2
+
 /datum/crafting_recipe/roguetown/survival/woodsword
 	name = "wooden sword (x2)"
 	display_category = ITEM_CAT_WEAPONS_SWORDS
